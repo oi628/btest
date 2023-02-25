@@ -1,31 +1,3 @@
-/*$('#mainButton').click(function(){
-	$("#main-page").fadeOut(1500);
-  setTimeout(function() {
-    var words = ["asd", "sad", "weqwefrwe", "asdf", "fasd", "wre", "sdf", "asfdn"];
-    var i = 0;
-    var interval = setInterval(function() {
-      $('#display').text(words[i]);
-      i++;
-      if (i == words.length) {
-        clearInterval(interval);
-        setTimeout(function() {
-			$('#display').text("");
-          $('#second-sentence').fadeIn(1000).delay(2000).fadeOut(1000, function() {
-            $('#centered-div').fadeIn(1000);
-            $('audio').get(0).play();
-			$("body").css("background-image", "url('wishB.jpg')");
-            setTimeout(function() {
-			$("#main-page").fadeIn(1500);
-              $('#centered-div').fadeOut(1000);
-			  
-            }, 10000);
-          });
-        }, 1000);
-      }
-    }, 1000);
-  }, 2000);
-});
-*/
 
 $('#mainButton').click(function(){
 	console.log("in");
@@ -44,7 +16,7 @@ $('#mainButton').click(function(){
           $('#second-sentence').fadeIn(1000).delay(2000).fadeOut(1000, function() {
             $('#centered-div').fadeIn(1000);
             $('audio').get(0).play();
-			if (window.matchMedia('(max-width: 576px)').matches) {
+			if (window.innerWidth<=576) {
 				$("body").css("background-image", "url('pic.jpeg')");
 			} else {
 				$("body").css("background-image", "url('wishB.jpg')");
