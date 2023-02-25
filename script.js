@@ -15,7 +15,7 @@ $('#mainButton').click(function(){
           $('#display').text("");
           $('#second-sentence').fadeIn(1000).delay(2000).fadeOut(1000, function() {
             $('#centered-div').fadeIn(1000);
-			$('audio').get(0).currentTime = 3;
+			$('audio').get(0).currentTime = 4;
             $('audio').get(0).play();
 			if (screen.width<=576  || window.innerWidth<=576){
 				$("body").css("background-image", "url('pic.jpeg')");
@@ -30,7 +30,7 @@ $('#mainButton').click(function(){
 				$("body").css("background-color", "black");
 				$('audio').get(0).pause();
               });
-            }, 17000);
+            }, 16000);
           });
         }, 1000);
       }
