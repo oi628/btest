@@ -15,8 +15,9 @@ $('#mainButton').click(function(){
           $('#display').text("");
           $('#second-sentence').fadeIn(1000).delay(2000).fadeOut(1000, function() {
             $('#centered-div').fadeIn(1000);
+			$('audio').get(0).currentTime = 0;
             $('audio').get(0).play();
-			if ((screen.width<=576  || window.innerWidth<=576)) {
+			if (screen.width<=576  || window.innerWidth<=576){
 				$("body").css("background-image", "url('pic.jpeg')");
 			} else {
 				$("body").css("background-image", "url('wishB.jpg')");
@@ -27,6 +28,7 @@ $('#mainButton').click(function(){
                 $("#main-page").fadeIn(1500);
 				$("body").css("background-image", "none");
 				$("body").css("background-color", "black");
+				$('audio').get(0).pause();
               });
             }, 10000);
           });
