@@ -1,0 +1,106 @@
+@font-face {
+  font-family: myFont;
+  src: url("Pacifico-Regular.ttf");
+}       
+body {
+  font-family: myFont;
+  background-color: black;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#display {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+#overlay {
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#second-sentence {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+}
+
+#centered-div {
+  display: none;
+  text-align: center;
+}
+
+#centered-div p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#centered-div img {
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+button {
+        width: 250px;
+		height: 250px;
+        font-size: 30px;
+        background-color: #ffc0cb;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0px 8px 16px rgba(255, 192, 203, 0.3);
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #ff69b4;
+      }
+
+      /* Class to fade out the body */
+      .fade-out {
+        opacity: 0;
+      }
+	  
+#image {
+	max-height: 80vh;
+	max-width: 40vw;
+}
+#main-page {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: black;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 576px){
+	#image{
+		display: none;
+	}
+}
