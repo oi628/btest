@@ -29,6 +29,7 @@ $('#mainButton').click(function(){
 				$("body").css("background-image", "none");
 				$("body").css("background-color", "black");
 				$('audio').get(0).pause();
+		      $('audio').get(0).currentTime = 0;
               });
             }, 10000);
           });
